@@ -23,11 +23,7 @@ public:
 
         long long low = *max_element(nums.begin(), nums.end());
 
-        long long high = accumulate(
-            nums.begin(),
-            nums.end(),
-            0LL
-        );
+        long long high = accumulate(nums.begin(),nums.end(),0LL);
 
         while(low < high) {
 
